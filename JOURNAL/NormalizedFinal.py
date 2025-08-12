@@ -3,7 +3,7 @@ import networkx as nx
 data = []
 seen_edges = set()
 
-with open('highschool2011.txt', 'r') as file:
+with open('HighSchool2013.txt', 'r') as file:
     for line in file:
         row = line.strip().split('\t')
         if len(row) >= 3:
