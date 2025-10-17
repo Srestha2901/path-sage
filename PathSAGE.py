@@ -60,8 +60,7 @@ def graph_to_adj_bet_return_scores(graph_file):
     features_tensor = torch.tensor([[temporal_aggregated_scores[n]] for n in sorted_nodes], dtype=torch.float)
 
     feat_runtime = time.time() - t0
-    print(f"[+] Feature extraction runtime: {feat_runtime:.4f} s  (num_nodes={len(sorted_nodes)})")
-
+   
     return sorted_nodes, features_tensor, G, feat_runtime
 
 # ---------- GraphSAGE Model ----------
@@ -120,8 +119,7 @@ def main(input_file='file.txt', device='cpu', learning_rate=0.01):
         out = model(features, edge_index)  # shape (N,1)
         embeddings = out.view(-1)  # shape (N,)
     eval_runtime = time.time() - eval_start
-    print(f"[+] Embedding forward runtime: {eval_runtime:.4f} s")
-
+   
     # Save embeddings with node IDs
     embeddings_cpu = embeddings.cpu().numpy().tolist()
     node_embedding_pairs = [(nid, float(emb)) for nid, emb in zip(sorted_nodes, embeddings_cpu)]
@@ -141,4 +139,5 @@ def main(input_file='file.txt', device='cpu', learning_rate=0.01):
 if __name__ == "__main__":
     G = nx.Graph()  # or use DiGraph() if your connections are directed
     rankings = main(input_file='file.txt', device='cpu')
+
 
