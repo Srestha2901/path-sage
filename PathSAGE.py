@@ -1,4 +1,3 @@
-# graphsage_rankings_unsupervised.py
 import ReadGraph
 import networkx as nx
 import json
@@ -48,10 +47,7 @@ def graph_to_adj_bet_return_scores(graph_file):
     temporal_average_scores = {str(node): score / total_valid_paths_sum for node, score in
                                temporal_aggregated_scores.items()}
 
-    # Print or use the results as needed
-    print("Temporal Aggregated Scores:")
-    # for node, score in temporal_aggregated_scores.items():
-    #     print(f"Node {node}: {score}")
+   
 
     temporal_aggregated_scores = {node: len(paths) for node, paths in valid_paths_for_nodes.items()}
 
@@ -139,10 +135,10 @@ def main(input_file='file.txt', device='cpu', learning_rate=0.01):
     with open('Pathsage.txt', 'w') as fo:
         json.dump(rankings_dict, fo, indent=4)
 
-    # Print as single JSON object
-    print(json.dumps(rankings_dict, indent=4))
+   
 
     return rankings_out
 if __name__ == "__main__":
     G = nx.Graph()  # or use DiGraph() if your connections are directed
     rankings = main(input_file='file.txt', device='cpu')
+
