@@ -65,7 +65,7 @@ def graph_to_adj_bet_return_scores(graph_file):
 
 # ---------- GraphSAGE Model ----------
 class GraphSAGE3(torch.nn.Module):
-    def __init__(self, in_channels, hidden1=64, hidden2=32, out_channels=1):
+    def __init__(self, in_channels, hidden1=64, hidden2=64, out_channels=1):
         super().__init__()
         self.sage1 = SAGEConv(in_channels, hidden1)
         self.sage2 = SAGEConv(hidden1, hidden2)
@@ -139,6 +139,7 @@ def main(input_file='file.txt', device='cpu', learning_rate=0.01):
 if __name__ == "__main__":
     G = nx.Graph() 
     rankings = main(input_file='file.txt', device='cpu')
+
 
 
 
