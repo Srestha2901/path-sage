@@ -137,7 +137,8 @@ def main(input_file='file.txt', device='cpu', learning_rate=0.01):
 
     return rankings_out
 if __name__ == "__main__":
-    G = nx.Graph()  # or use DiGraph() if your connections are directed
+    G = nx.Graph() 
     rankings = main(input_file='file.txt', device='cpu')
+
 
 
