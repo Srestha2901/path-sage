@@ -22,7 +22,7 @@ cd path-sage
 # 4. How to Run the Code
 ## 4.1. Load the Dataset
 
-All datasets required for running the framework are provided inside the "Datasets" folder.
+All datasets used in Path-SAGE evaluation are provided inside the "Datasets" folder.
 
 ## 4.2. Preprocessing
 
