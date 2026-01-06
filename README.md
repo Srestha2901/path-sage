@@ -1,14 +1,12 @@
-Path-SAGE
+# Intrduction
 
-Path-SAGE is a temporal network analysis framework designed to identify influential nodes in aggregated temporal networks. 
+Path-SAGE is a temporal network analysis framework designed to identify influential nodes in aggregated temporal networks. This repository provides the algorithms created either to run the state-of-the-art models and the ones that implement Path-SAGE. It also provides the datasets used in the evaluation experiments.
 
-Citations to this work: XXXXXXX
+To cite this work: XXXXXXX
 
 # Installation & Requirements
 
 Before running the code, ensure that all required Python Libraries are installed. They are:
-
-
 > matplotlib ~= 3.9.0  
 > numpy ~= 1.26.4  
 > networkx ~= 3.2.1  
@@ -35,15 +33,13 @@ Run the following scripts located in the util/ directory:
 
 These scripts parse the temporal graph and generate the necessary distance matrices.
 
-## 3. Competitive State-of-the-Art Models
+## 3. State-of-the-Art Models
 
-The baseline methods used for comparison are available inside:
-
-> algorithms.state-of-the-art/
+The baseline methods used for comparison are available inside the folder "algorithms.state-of-the-art"
 
 ## 4. Proposed Method Implementation
 
-The proposed Path-SAGE framework comprises two algorithms, as described in the paper (Algorithms 1 and 2).
+The Path-SAGE framework comprises two algorithms, as described in the paper (Algorithms 1 and 2).
 Both algorithms are implemented together in a single file located in the folder "Proposed_method"
 
 ## 5. Experimental Results
