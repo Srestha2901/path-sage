@@ -2,7 +2,7 @@
 
 Path-SAGE is a temporal network analysis framework designed to identify influential nodes in aggregated temporal networks. This repository provides the algorithms created either to run the state-of-the-art models and the ones that implement Path-SAGE. It also provides the datasets used in the evaluation experiments.
 
-To cite this work: XXXXXXX
+To cite this work: 2.	Sadhu, S., Namtirtha, A., C. Malta, M., Dutta, A. (2025). PathSAGE: Identifying Influential Spreaders in Temporal Networks with GraphSAGE. * IEEE Transactions on Emerging Topics in Computational Intelligence * (accepted for publication)
 
 # 2. Installation & Requirements
 
