@@ -44,7 +44,7 @@ Both algorithms are implemented together in a single file located in the folder 
 
 ## 5. Experimental Results
 
-All experiment outputs are stored inside the Results/ directory. The result files include:
+All experiment outputs are stored inside the "Results" folder. The result files include:
 
 > Experiment1.xls – Contains results for Experiment 1
 > 
