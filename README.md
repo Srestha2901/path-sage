@@ -22,11 +22,11 @@ cd path-sage
 # How to Run the Code
 ## 1. Load the Dataset
 
-All datasets required for running the framework are provided inside the Dataset/ folder.
+All datasets required for running the framework are provided inside the "Datasets" folder.
 
 ## 2. Preprocessing
 
-Run the following scripts located in the util/ directory:
+Run the following scripts located in the "util" folder:
 
 > ReadGraph.py
 > DistanceMatrix.py
