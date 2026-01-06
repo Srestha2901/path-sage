@@ -29,6 +29,7 @@ All datasets used in Path-SAGE evaluation are provided inside the "Datasets" fol
 Run the following scripts located in the "util" folder:
 
 > ReadGraph.py
+> 
 > DistanceMatrix.py
 
 These scripts parse the temporal graph and generate the necessary distance matrices.
