@@ -15,16 +15,12 @@ Before running the code, ensure that all required Python Libraries are installed
 > pandas ~= 2.2.3  
 > scikit-learn ~= 1.5.0
 
-# 3. Clone the Repository
-git clone https://github.com/your-username/path-sage.git
-cd path-sage
-
-# 4. How to Run the Code
-## 4.1. Load the Dataset
+# 3. How to Run the Code
+## 3.1. Load the Dataset
 
 All datasets used in Path-SAGE evaluation are provided inside the "Datasets" folder.
 
-## 4.2. Preprocessing
+## 3.2. Preprocessing
 
 Run the following scripts located in the "util" folder:
 
@@ -34,16 +30,16 @@ Run the following scripts located in the "util" folder:
 
 These scripts parse the temporal graph and generate the necessary distance matrices.
 
-## 4.3. State-of-the-Art Models
+## 3.3. State-of-the-Art Models
 
 The baseline methods used for comparison are available inside the folder "algorithms.state-of-the-art"
 
-## 4.4. Proposed Method Implementation
+## 3.4. Proposed Method Implementation
 
 The Path-SAGE framework comprises two algorithms, as described in the paper (Algorithms 1 and 2).
 Both algorithms are implemented together in a single file located in the folder "Proposed_method"
 
-## 4.5. Experimental Results
+## 3.5. Experimental Results
 
 All the experiment results are available in the "Results" folder. This folder includes:
 
@@ -54,3 +50,7 @@ All the experiment results are available in the "Results" folder. This folder in
 > Experiment4.xls – Results for Experiment 4
 > 
 > Experiment5.xls – Results for Experiment 5
+
+# 4. How to clone this repository
+git clone https://github.com/your-username/path-sage.git
+cd path-sage
